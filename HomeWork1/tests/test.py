@@ -1,12 +1,12 @@
 from unittest import TestCase
-from HelloWorld import Hello
+from HomeWork1.hello_world import Hello
 
 
 class HelloTest(TestCase):
-    def test_Greeting_True(self):
+    def test_greeting_true(self):
         greeting = Hello()
         self.assertEqual(greeting.hi_message, "Hello World!")
 
-    def test_Greeting_False(self):
+    def test_greeting_false(self):
         greeting = Hello()
         self.assertNotEqual(greeting.hi_message, "World helllo")
